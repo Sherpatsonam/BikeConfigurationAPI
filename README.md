@@ -5,4 +5,4 @@
  "ConnectionStrings": {
     "BikesDatabase": "Server=YourServer;Database=WBConf_API.Models;Trusted_Connection=True;"
   }
-# Use the BiKeDB backupfile to restore database in your machine
+#Use the BiKeDB backupfile to restore database in your machine
