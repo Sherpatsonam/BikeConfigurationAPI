@@ -1,5 +1,5 @@
 # BikeConfigurationAPI
-# ASP.NET API, Entity Framework, SQL Server
+# ASP.NET API, Entity Framework, REST, SQL Server
 #Change the database connection string in appsettings.json.
 
  "ConnectionStrings": {
