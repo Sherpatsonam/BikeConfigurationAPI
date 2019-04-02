@@ -8,9 +8,9 @@
 #Use the BiKeDB backupfile to restore database in your machine
 Rest API
 //Get List OF Bikes
-# https://wbconf.azurewebsites.net/api/bike/Getbikes
+1.https://wbconf.azurewebsites.net/api/bike/Getbikes
 //Get List Of Configuration for Bike with bike ID
-#https://wbconf.azurewebsites.net/api/bike/GetBikeConfigs/6
+2.https://wbconf.azurewebsites.net/api/bike/GetBikeConfigs/6
 //Get a configuration  with configId
 3.https://wbconf.azurewebsites.net/api/bike/GetBikeConfig/11
 //add a bike
