@@ -35,14 +35,14 @@ Rest API
     "derailleurs": "Shimano5",
     "chainSet": "3xspeed5",
     "bikeId": 7
-  }
-// delete a bike configuration
+}
+//delete a bike configuration
 6.https://wbconf.azurewebsites.net/api/bike/DeleteBikeConfig/3
-//deleta a bike
+//delete a bike
 7.https://wbconf.azurewebsites.net/api/bike/DeleteBike/3
 //update a bike
 8.https://wbconf.azurewebsites.net/api/bike/UpdateBike
-    {		"bikeId":6,
+{		     "bikeId":6,
         "name": "genesis rct2",
         "initialCost": 201,
         "upgradedCost": 201,
