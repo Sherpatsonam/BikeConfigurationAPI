@@ -8,14 +8,14 @@ The sql server and Web Api both are hosted in Azure.
   }
 #Use the BiKeDB backupfile to restore database in your machine
 Rest API
-//Get List OF Bikes
-1.https://wbconf.azurewebsites.net/api/bike/Getbikes
-//Get List Of Configuration for Bike with bike ID
-2.https://wbconf.azurewebsites.net/api/bike/GetBikeConfigs/6
-//Get a configuration  with configId
-3.https://wbconf.azurewebsites.net/api/bike/GetBikeConfig/11
-//add a bike
-4.https://wbconf.azurewebsites.net/api/bike/AddBike
+
+1.https://wbconf.azurewebsites.net/api/bike/Getbikes //Get List OF Bikes
+
+2.https://wbconf.azurewebsites.net/api/bike/GetBikeConfigs/6  //Get List Of Configuration for Bike with bike ID
+
+3.https://wbconf.azurewebsites.net/api/bike/GetBikeConfig/11  //Get a configuration  with configId
+
+4.https://wbconf.azurewebsites.net/api/bike/AddBike  //add a bike
 {	
         "name": "genesis rct23",
         "initialCost": 201,
@@ -23,8 +23,8 @@ Rest API
         "walmartId": 22222,
         "bikeConfs": []
 }
-//Add a bike config
-5.https://wbconf.azurewebsites.net/api/bike/AddBikeConfig
+
+5.https://wbconf.azurewebsites.net/api/bike/AddBikeConfig  //Add a bike config
 {
    
     "pedal": "Raceface5",
@@ -37,12 +37,12 @@ Rest API
     "chainSet": "3xspeed5",
     "bikeId": 7
 }
-//delete a bike configuration
-6.https://wbconf.azurewebsites.net/api/bike/DeleteBikeConfig/3
-//delete a bike
-7.https://wbconf.azurewebsites.net/api/bike/DeleteBike/3
-//update a bike
-8.https://wbconf.azurewebsites.net/api/bike/UpdateBike
+
+6.https://wbconf.azurewebsites.net/api/bike/DeleteBikeConfig/3  //delete a bike configuration
+
+7.https://wbconf.azurewebsites.net/api/bike/DeleteBike/3  //delete a bike
+
+8.https://wbconf.azurewebsites.net/api/bike/UpdateBike  //update a bike
 {		     "bikeId":6,
         "name": "genesis rct2",
         "initialCost": 201,
@@ -50,8 +50,8 @@ Rest API
         "walmartId": 222212,
         "bikeConfs": []
 }
-//update a bike configuration
-9.https://wbconf.azurewebsites.net/api/bike/UpdateBikeConf
+
+9.https://wbconf.azurewebsites.net/api/bike/UpdateBikeConf  //update a bike configuration
 {
     "configId":11,
     "pedal": "Raceface5",
