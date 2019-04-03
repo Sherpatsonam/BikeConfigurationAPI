@@ -36,9 +36,15 @@ namespace WBConf
                 .AllowAnyHeader();
             }));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            services.AddDbContext<WalmartBikeDbContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("BikesDatabase")));
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                services.AddDbContext<WalmartBikeDbContext>(options =>
+                        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            else if(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
+                {
+                services.AddDbContext<WalmartBikeDbContext>(options =>
+              options.UseSqlServer(Configuration.GetConnectionString("BikesDatabase")));
+                
+            }
             services.AddScoped<IBikeRepository, BikeRepository>();
 
         }
@@ -50,8 +56,13 @@ namespace WBConf
             {
                 app.UseDeveloperExceptionPage();
             }
+            if (env.IsProduction() || env.IsStaging() || env.IsEnvironment("Staging_2"))
+            {
+                app.UseExceptionHandler("/Error");
+            }
             else
             {
+                app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
 
