@@ -1,6 +1,7 @@
 # BikeConfigurationAPI
 # ASP.NET API, Entity Framework, REST, SQL Server
-The sql server and Web Api both are hosted in Azure. 
+The sql server and Web Api both are hosted in Azure.
+https://wbconf.azurewebsites.net/
 #Change the database connection string in appsettings.json for local development.
 
  "ConnectionStrings": {
@@ -9,13 +10,13 @@ The sql server and Web Api both are hosted in Azure.
 #Use the BiKeDB backupfile to restore database in your machine
 Rest API
 
-1.https://wbconf.azurewebsites.net/api/bike/Getbikes //Get List OF Bikes
+1.https://localhost:#####/api/bike/Getbikes //Get List OF Bikes
 
-2.https://wbconf.azurewebsites.net/api/bike/GetBikeConfigs/6  //Get List Of Configuration for Bike with bike ID
+2.https://localhost:#####/api/bike/GetBikeConfigs/6  //Get List Of Configuration for Bike with bike ID
 
-3.https://wbconf.azurewebsites.net/api/bike/GetBikeConfig/11  //Get a configuration  with configId
+3.https://localhost:#####/api/bike/GetBikeConfig/11  //Get a configuration  with configId
 
-4.https://wbconf.azurewebsites.net/api/bike/AddBike  //add a bike
+4.https://localhost:#####/api/bike/AddBike  //add a bike
 {	
         "name": "genesis rct23",
         "initialCost": 201,
@@ -24,7 +25,7 @@ Rest API
         "bikeConfs": []
 }
 
-5.https://wbconf.azurewebsites.net/api/bike/AddBikeConfig  //Add a bike config
+5.https://localhost:#####/api/bike/AddBikeConfig  //Add a bike config
 {
    
     "pedal": "Raceface5",
@@ -38,11 +39,11 @@ Rest API
     "bikeId": 7
 }
 
-6.https://wbconf.azurewebsites.net/api/bike/DeleteBikeConfig/3  //delete a bike configuration
+6.https://localhost:#####/api/bike/DeleteBikeConfig/3  //delete a bike configuration
 
-7.https://wbconf.azurewebsites.net/api/bike/DeleteBike/3  //delete a bike
+7.https://localhost:#####/api/bike/DeleteBike/3  //delete a bike
 
-8.https://wbconf.azurewebsites.net/api/bike/UpdateBike  //update a bike
+8.https://localhost:#####/api/bike/UpdateBike  //update a bike
 {		     "bikeId":6,
         "name": "genesis rct2",
         "initialCost": 201,
@@ -51,7 +52,7 @@ Rest API
         "bikeConfs": []
 }
 
-9.https://wbconf.azurewebsites.net/api/bike/UpdateBikeConf  //update a bike configuration
+9.https://localhost:#####/api/bike/UpdateBikeConf  //update a bike configuration
 {
     "configId":11,
     "pedal": "Raceface5",
