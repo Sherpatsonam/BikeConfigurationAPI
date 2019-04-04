@@ -45,7 +45,9 @@ Rest API
 7.https://localhost:#####/api/bike/DeleteBike/3  //delete a bike
 
 8.https://localhost:#####/api/bike/UpdateBike  //update a bike
-{		     "bikeId":6,
+
+{		     
+        "bikeId":6,
         "name": "genesis rct2",
         "initialCost": 201,
         "upgradedCost": 201,
@@ -54,6 +56,7 @@ Rest API
 }
 
 9.https://localhost:#####/api/bike/UpdateBikeConf  //update a bike configuration
+
 {
     "configId":11,
     "pedal": "Raceface5",
@@ -66,5 +69,5 @@ Rest API
     "chainSet": "3xspeed55",
     "bikeId": 6
     
-    }
+}
     
