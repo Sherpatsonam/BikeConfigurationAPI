@@ -42,7 +42,7 @@ namespace WBConf
             else if(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
                 {
                 services.AddDbContext<WalmartBikeDbContext>(options =>
-              options.UseSqlServer(Configuration.GetConnectionString("BikesDatabase")));
+              options.UseSqlServer(Configuration.GetConnectionString("WalmartBikesDatabase")));
                 
             }
             services.AddScoped<IBikeRepository, BikeRepository>();
